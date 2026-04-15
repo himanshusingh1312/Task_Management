@@ -407,7 +407,7 @@ export default function ProjectTasksPage() {
                   className={`group flex flex-col gap-3 rounded-2xl border bg-white p-4 shadow-sm transition-all hover:shadow-md sm:flex-row sm:items-start sm:justify-between dark:bg-slate-800 ${
                     task.status === "completed"
                       ? "border-emerald-100 opacity-80 dark:border-emerald-900/50"
-                      : isDueDatePast(task.dueDate) && task.status !== "completed"
+                      : isDueDatePast(task.dueDate)
                       ? "border-red-100 dark:border-red-900/40"
                       : "border-slate-100 dark:border-slate-700"
                   }`}
