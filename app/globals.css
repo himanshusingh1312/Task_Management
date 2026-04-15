@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
+/* Class-based dark mode: toggle by adding .dark to <html> */
+@variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #f8fafc;
   --foreground: #0f172a;
+}
+
+html.dark {
+  --background: #0f172a;
+  --foreground: #f8fafc;
 }
 
 @theme inline {
@@ -46,6 +54,21 @@ body {
 .auth-input:focus {
   border-color: #6366f1;
   box-shadow: 0 0 0 3px rgb(99 102 241 / 0.15);
+}
+
+html.dark .auth-input {
+  border-color: #334155;
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+html.dark .auth-input::placeholder {
+  color: #64748b;
+}
+
+html.dark .auth-input:focus {
+  border-color: #818cf8;
+  box-shadow: 0 0 0 3px rgb(99 102 241 / 0.2);
 }
 
 /* Primary button */
@@ -94,6 +117,14 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
 }
 
 /* line-clamp utilities */

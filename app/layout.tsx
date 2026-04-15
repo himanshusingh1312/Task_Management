@@ -20,6 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${geist.variable} h-full`}>
+      <head>
+        {/* Prevent flash of wrong theme on load */}
+        <script dangerouslySetInnerHTML={{ __html: `try{if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('dark')}catch(_){}` }} />
+      </head>
       <body className="h-full antialiased">
         <Providers>{children}</Providers>
       </body>
