@@ -80,7 +80,7 @@ export default function LoginPage() {
       </div>
 
       {/* Right — login form */}
-      <div className="flex flex-1 flex-col items-center justify-center bg-linear-to-br from-slate-50 via-white to-indigo-50 px-6 py-12 dark:from-slate-900 dark:via-slate-900 dark:to-slate-800">
+      <div className="flex flex-1 flex-col items-center justify-center bg-linear-to-br from-slate-50 via-white to-indigo-50 px-6 py-12 transition-colors duration-300 dark:from-slate-900 dark:via-slate-900 dark:to-slate-800">
         <div className="w-full max-w-sm rounded-2xl border border-slate-200/80 bg-white/90 p-7 shadow-sm backdrop-blur-sm dark:border-slate-700 dark:bg-slate-800/90">
           {/* Mobile logo */}
           <div className="mb-8 flex items-center gap-2.5 lg:hidden">

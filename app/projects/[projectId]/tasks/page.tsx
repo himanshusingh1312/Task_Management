@@ -176,7 +176,7 @@ export default function ProjectTasksPage() {
 
   return (
     <PrivateRoute>
-      <div className="min-h-screen bg-slate-50 dark:bg-slate-900">
+      <div className="min-h-screen bg-slate-50 transition-colors duration-300 dark:bg-slate-900">
         <Navbar overdueCount={stats.overdue} />
 
         <main className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">

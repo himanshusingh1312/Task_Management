@@ -101,7 +101,7 @@ export default function DashboardPage() {
 
   return (
     <PrivateRoute>
-      <div className="min-h-screen bg-slate-50 dark:bg-slate-900">
+      <div className="min-h-screen bg-slate-50 transition-colors duration-300 dark:bg-slate-900">
         <Navbar />
 
         <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
