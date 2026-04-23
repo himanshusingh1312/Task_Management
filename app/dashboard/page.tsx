@@ -106,7 +106,7 @@ export default function DashboardPage() {
 
         <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
           {/* Page header */}
-          <div className="mb-8 flex items-center justify-between">
+          <div className="mb-8 flex items-center justify-between rounded-2xl border border-slate-200/70 bg-white/80 p-5 shadow-sm backdrop-blur-sm dark:border-slate-700 dark:bg-slate-800/80">
             <div>
               <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Projects</h1>
               <p className="mt-0.5 text-sm text-slate-500 dark:text-slate-400">
@@ -187,6 +187,15 @@ export default function DashboardPage() {
                   </div>
                 </form>
               </div>
+            </div>
+          )}
+
+          {!loading && projects.length > 0 && (
+            <div className="mb-4 flex items-center justify-between">
+              <p className="text-sm text-slate-500 dark:text-slate-400">Your active workspace</p>
+              <span className="rounded-full bg-indigo-50 px-2.5 py-1 text-xs font-medium text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300">
+                {projects.length} total
+              </span>
             </div>
           )}
 

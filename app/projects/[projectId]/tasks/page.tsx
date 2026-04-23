@@ -181,7 +181,7 @@ export default function ProjectTasksPage() {
 
         <main className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
           {/* Back + header */}
-          <div className="mb-6">
+          <div className="mb-6 rounded-2xl border border-slate-200/70 bg-white/80 p-5 shadow-sm backdrop-blur-sm dark:border-slate-700 dark:bg-slate-800/80">
             <button
               onClick={() => router.push("/dashboard")}
               className="mb-4 flex items-center gap-1.5 text-sm text-slate-500 transition-colors hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
@@ -230,7 +230,7 @@ export default function ProjectTasksPage() {
           </div>
 
           {/* Search + Filter row */}
-          <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="mb-5 flex flex-col gap-3 rounded-2xl border border-slate-200/70 bg-white/80 p-4 shadow-sm sm:flex-row sm:items-center dark:border-slate-700 dark:bg-slate-800/80">
             {/* Search */}
             <div className="relative flex-1">
               <svg

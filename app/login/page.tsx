@@ -80,8 +80,8 @@ export default function LoginPage() {
       </div>
 
       {/* Right — login form */}
-      <div className="flex flex-1 flex-col items-center justify-center bg-slate-50 px-6 py-12">
-        <div className="w-full max-w-sm">
+      <div className="flex flex-1 flex-col items-center justify-center bg-linear-to-br from-slate-50 via-white to-indigo-50 px-6 py-12 dark:from-slate-900 dark:via-slate-900 dark:to-slate-800">
+        <div className="w-full max-w-sm rounded-2xl border border-slate-200/80 bg-white/90 p-7 shadow-sm backdrop-blur-sm dark:border-slate-700 dark:bg-slate-800/90">
           {/* Mobile logo */}
           <div className="mb-8 flex items-center gap-2.5 lg:hidden">
             <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-600">
@@ -89,12 +89,12 @@ export default function LoginPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
               </svg>
             </div>
-            <span className="text-sm font-semibold text-slate-900">TaskFlow</span>
+            <span className="text-sm font-semibold text-slate-900 dark:text-slate-100">TaskFlow</span>
           </div>
 
           <div className="mb-8">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900">Welcome back</h2>
-            <p className="mt-1.5 text-sm text-slate-500">Sign in to your account to continue</p>
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Welcome back</h2>
+            <p className="mt-1.5 text-sm text-slate-500 dark:text-slate-400">Sign in to your account to continue</p>
           </div>
 
           {error && (
@@ -160,11 +160,15 @@ export default function LoginPage() {
             </button>
           </form>
 
-          <p className="mt-6 text-center text-sm text-slate-500">
+          <p className="mt-6 text-center text-sm text-slate-500 dark:text-slate-400">
             Don&apos;t have an account?{" "}
-            <Link href="/register" className="font-medium text-indigo-600 hover:text-indigo-700">
+            <Link href="/register" className="font-medium text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300">
               Create one free
             </Link>
+          </p>
+
+          <p className="mt-4 text-center text-xs text-slate-400 dark:text-slate-500">
+            Secure sign in with protected private routes
           </p>
         </div>
       </div>

@@ -82,13 +82,15 @@ html.dark .auth-input:focus {
   font-size: 0.875rem;
   font-weight: 600;
   color: #ffffff;
-  transition: background-color 150ms, transform 100ms, opacity 150ms;
+  transition: background-color 150ms, transform 100ms, opacity 150ms, box-shadow 150ms;
   cursor: pointer;
   border: none;
+  box-shadow: 0 6px 16px rgb(79 70 229 / 0.22);
 }
 
 .btn-primary:hover:not(:disabled) {
   background-color: #4338ca;
+  box-shadow: 0 8px 20px rgb(67 56 202 / 0.28);
 }
 
 .btn-primary:active:not(:disabled) {
@@ -98,6 +100,7 @@ html.dark .auth-input:focus {
 .btn-primary:disabled {
   opacity: 0.55;
   cursor: not-allowed;
+  box-shadow: none;
 }
 
 /* Custom scrollbar */
